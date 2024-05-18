@@ -1,6 +1,6 @@
 [build]
   command = "serve -s build"
-  publish = "client/build"
+  publish = "build"
   functions = "functions"
 
 # Указываем Netlify использовать кэш для ускорения сборки
