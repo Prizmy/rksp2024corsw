@@ -1,8 +1,8 @@
 [build]
-  command = "serve -s build"
-  publish = "client/build"
-  functions = "client/functions"
+  publish = "build"
+  command = "echo 'Skipping build step'"
 
-[build.environment]
-  NODE_MODULES_CACHE = "true"
-  YARN_CACHE_FOLDER = ".yarn-cache"
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
