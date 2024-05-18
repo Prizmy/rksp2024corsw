@@ -4,5 +4,5 @@
   functions = "client/functions"
 
 [build.environment]
-  NODE_MODULES_CACHE = true
+  NODE_MODULES_CACHE = "true"
   YARN_CACHE_FOLDER = ".yarn-cache"
