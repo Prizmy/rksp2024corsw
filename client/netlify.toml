@@ -1,9 +1,8 @@
 [build]
   command = "serve -s build"
   publish = "client/build"
-  functions = "functions"
+  functions = "client/functions"
 
-# Указываем Netlify использовать кэш для ускорения сборки
 [build.environment]
-  NODE_MODULES_CACHE = "true"
+  NODE_MODULES_CACHE = true
   YARN_CACHE_FOLDER = ".yarn-cache"
